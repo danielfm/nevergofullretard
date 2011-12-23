@@ -1,0 +1,11 @@
+= Never Go Full Retard Website
+
+First, install all project's dependencies:
+
+  $ bundle install
+
+Then, open up a shell at the project root directory and enter the following command:
+
+  $ rackup config.ru
+
+The application should now be running at http://localhost:9292.
