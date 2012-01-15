@@ -5,9 +5,13 @@
     <title>Never go full retard</title>
 
     <meta name="description" content="You went full retard, man. Never go full retard."/>
-    <meta name="og:description" content="You went full retard, man. Never go full retard."/>
+    <meta property="og:description" content="You went full retard, man. Never go full retard."/>
+
     <meta property="og:type" content="movie"/>
-    <meta property="og:image" content="http://nevergofullretard.info/downey.jpg"/>
+    <meta property="og:image" content="http://<%= @request.host_with_port %>/downey.jpg"/>
+
+    <link rel="canonical" href="<%= @request.url %>"/>
+    <meta property="og:url" content="<%= @request.url %>"/>
 
     <style>
       body {
